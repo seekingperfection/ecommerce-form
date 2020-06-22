@@ -1,0 +1,205 @@
+/* Global CSS rules for this application */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+    color: #3F3F3F;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.core-input {
+    background: #FFFFFF;
+    border: 1px solid #D8D6D6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #605D5D;
+    padding: 10px 10px 11px;
+}
+
+.input {
+    background: #FFFFFF;
+    border: 1px solid #D8D6D6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #605D5D;
+    width: 133px;
+    padding: 10px 10px 11px;
+}
+
+.gender {
+    width: 156px;
+    height: 40px;
+    border: 1px solid #D8D6D6;
+    background: #FFFFFF;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #494949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-duration: 0.5s; */
+}
+
+.gender:hover {
+    border: none;
+    background-color: #2888E0;
+    color: #FFFFFF;
+    
+}
+
+.female, .male {
+    background-color: #2888E0 !important;
+    color: #FFFFFF !important;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #898989;
+}
+
+.center {
+    padding-left: 30px;
+}
+
+.error-message {
+    font-weight: 100;
+    color: red;
+    font-size: 10px;
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.zipcode {
+    padding-left: 20px !important;
+}
+
+.markerPosition {
+    position: absolute;
+    top: 26px;
+    left: 7px;
+}
+
+.lockPosition {
+    position: absolute;
+    top: 27px;
+    right: 11px;
+}
+
+.cvvPosition {
+    position: absolute;
+    top: 29px;
+    right: 10px;
+}
+
+.cvvExplanation {
+    z-index: 1;
+    background-color: rgb(0,0,0,0.75);
+    color: #FFFFFF;
+    position: absolute;
+    width: 170px;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 5px 10px;
+    border-radius: 4px;
+    top: 21px;
+    right: 0;
+    visibility: hidden;
+}
+
+.cvvPosition:hover .cvvExplanation {
+    visibility: visible;
+}
+
+.cardType {
+    font-size: 12px;
+    position: absolute;
+    top: 30px;
+    right: 8px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.icon-color {
+    color: #7B8091;
+    font-size: 12px;
+}
+
+.continue-btn {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    background: #08B335;
+    border: none;
+}
+
+.month {
+    width: 152px;
+    height: 40px;
+    border: 1px solid #D8D6D6;
+    border-radius: 4px;
+    color: #605D5D;
+    padding: 10px 10px 11px;
+}
+
+.similar-select {
+    width: 78px;
+    height: 40px;
+    border: 1px solid #D8D6D6;
+    border-radius: 4px;
+    color: #605D5D;
+    padding: 10px 10px 11px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main__block--form-content {
+        padding: 15px 10px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .main__block--form {
+       width: 290px !important;
+       padding-top: 15px !important;
+       padding-bottom: 15px !important;
+    }
+
+    .main__block--card-info {
+        padding: 15px 10px !important;
+    }
+
+    .main__block--form-header {
+        text-align: center !important;
+    }
+
+    .gender {
+        width: 131px ;
+    }
+
+    .input {
+        width: 121.5px; 
+    }
+}
